@@ -1,8 +1,8 @@
 
-****** LEHD Public Use Data Schema v4.0.2 ******
+****** LEHD Public Use Data Schema V4.0.2 ******
 Lars Vilhuber
 <ces.qwi.feedback@census.gov>
-10 December 2015
+15 April 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -93,10 +93,10 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
                                                 Separations
         SepBegR            S2R       sSepBegR   Beginning-of-Quarter Separation
                                                 Rate
-         HirAs              A3         sHirAs   Hires All (Stable): Counts
+         HirAS              A3         sHirAS   Hires All (Stable): Counts
                                                 (Flows into Full-Quarter
                                                 Employment)
-         HirNs              H3         sHirNs   Hires New (Stable): Counts (New
+         HirNS              H3         sHirNS   Hires New (Stable): Counts (New
                                                 Hires to Full-Quarter Status)
           SepS              S3          sSepS   Separations (Stable): Counts
                                                 (Flow out of Full-Quarter
@@ -107,7 +107,7 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
        TurnOvrS             FT       sTurnOvrS  Turnover (Stable)
         FrmJbGn             JC       sFrmJbGn   Firm Job Gains: Counts (Job
                                                 Creation)
-       FrmJobLs             JD       sFrmJobLs  Firm Job Loss: Counts (Job
+        FrmJbLs             JD       sFrmJbLs   Firm Job Loss: Counts (Job
                                                 Destruction)
          FrmJbC             JF        sFrmJbC   Firm Job Change: Net Change
      HirAEndRepl            EI    sHirAEndRepl  Replacement Hires
@@ -123,7 +123,7 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
                                                 Earnings
       EarnHirAS           ZWFA      sEarnHirAS  Hires All (Stable): Average
                                                 Monthly Earnings
-      EarnHireNS          ZWFH     sEarnHireNS  Hires New (Stable): Average
+      EarnHirNS           ZWFH      sEarnHirNS  Hires New (Stable): Average
                                                 Monthly Earnings
        EarnSepS           ZWFS       sEarnSepS  Separations (Stable): Average
                                                 Monthly Earnings
@@ -362,14 +362,19 @@ flag label
  12  Aggregate of cells - some of which have significantly distorted data
 4.  Changes
 **** 4.1. This version (revisions) ****
+    * 2015-04-01: Initial version
     * 2015-08-07: Corrected release that the switch to NAICS 2012 was made
     * 2015-12-10: Added consolidated geography label file
       label_geography_all.csv
+    * 2016-04-07: Fixed typo in variables_qwipu.csv (FrmJbLsS, EarnHirNS and
+      status variables)
+    * 2016-04-13: Fixed typo in variables_qwipu.csv (HirAS, HirNS, and status
+      variables)
 **** 4.2. Version 4.0.1 from 4.0 ****
     * 2015-02-24: removed obsolete flag values
     * 2015-04-01: updated IL, NE geography definitions
 **** 4.3. Version 4.0.2 from 4.0.1 ****
     * 2015-04-01: switched NAICS coding from 2007 to 2012
-This revision: Thu Dec 10 11:49:46 EST 2015
+This revision: Fri Apr 15 11:23:50 EDT 2016
 ===============================================================================
-Last updated 2015-12-10 11:49:46 EST
+Last updated 2016-04-15 11:23:50 EDT

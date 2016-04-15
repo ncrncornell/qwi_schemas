@@ -1,16 +1,14 @@
 
 ****** LEHD Public Use Data Schema V4.0.3 ******
 Lars Vilhuber
-<lars.vilhuber@cornell.edu>
-22 December 2015
+<ces.qwi.feedback@census.gov>
+15 April 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-            This document is not an official Census Bureau publication. It is
-[Important] compiled from publicly accessible information by Lars Vilhuber
-            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
-            welcome. Please write us at lars.vilhuber@cornell.edu.
+[Important] Feedback is welcome. Please write us at
+            ces.qwi.feedback@census.gov. .
 The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal
 Employer-Household Dynamics Program are available for download with the
 following data schema. These data are available as Comma-Separated Value (CSV)
@@ -95,10 +93,10 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
                                                 Separations
         SepBegR            S2R       sSepBegR   Beginning-of-Quarter Separation
                                                 Rate
-         HirAs              A3         sHirAs   Hires All (Stable): Counts
+         HirAS              A3         sHirAS   Hires All (Stable): Counts
                                                 (Flows into Full-Quarter
                                                 Employment)
-         HirNs              H3         sHirNs   Hires New (Stable): Counts (New
+         HirNS              H3         sHirNS   Hires New (Stable): Counts (New
                                                 Hires to Full-Quarter Status)
           SepS              S3          sSepS   Separations (Stable): Counts
                                                 (Flow out of Full-Quarter
@@ -109,7 +107,7 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
        TurnOvrS             FT       sTurnOvrS  Turnover (Stable)
         FrmJbGn             JC       sFrmJbGn   Firm Job Gains: Counts (Job
                                                 Creation)
-       FrmJobLs             JD       sFrmJobLs  Firm Job Loss: Counts (Job
+        FrmJbLs             JD       sFrmJbLs   Firm Job Loss: Counts (Job
                                                 Destruction)
          FrmJbC             JF        sFrmJbC   Firm Job Change: Net Change
      HirAEndRepl            EI    sHirAEndRepl  Replacement Hires
@@ -125,7 +123,7 @@ Indicator Variable Alternate name  Status Flag  Indicator Name
                                                 Earnings
       EarnHirAS           ZWFA      sEarnHirAS  Hires All (Stable): Average
                                                 Monthly Earnings
-      EarnHireNS          ZWFH     sEarnHireNS  Hires New (Stable): Average
+      EarnHirNS           ZWFH      sEarnHirNS  Hires New (Stable): Average
                                                 Monthly Earnings
        EarnSepS           ZWFS       sEarnSepS  Separations (Stable): Average
                                                 Monthly Earnings
@@ -369,6 +367,13 @@ flag label
     * 2015-12-10: Added consolidated geography label file
       label_geography_all.csv
     * 2015-12-22: Updated the identification of the correct geo vintage
+    * 2016-04-07: Fixed typo in variables_qwipu.csv (FrmJbLsS, EarnHirNS and
+      status variables)
+    * 2016-04-11: Fixed error in CBSA names (failure to actually update to 2014
+      Geovintage)
+    * 2016-04-11: Corrected WIB naming change in Florida and Ohio
+    * 2016-04-13: Fixed typo in variables_qwipu.csv (HirAS, HirNS, and status
+      variables)
 **** 4.2. Version 4.0.1 from 4.0 ****
     * 2015-02-24: removed obsolete flag values
     * 2015-04-01: updated IL, NE geography definitions
@@ -377,6 +382,6 @@ flag label
 **** 4.4. Version 4.0.3 from 4.0.2 ****
     * 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added
       MA.
-This revision: Tue Dec 22 22:35:49 EST 2015
+This revision: Fri Apr 15 11:23:55 EDT 2016
 ===============================================================================
-Last updated 2015-12-22 22:35:49 EST
+Last updated 2016-04-15 11:23:55 EDT

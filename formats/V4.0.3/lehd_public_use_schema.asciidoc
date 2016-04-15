@@ -1,6 +1,6 @@
 = LEHD Public Use Data Schema V4.0.3
-Lars Vilhuber <lars.vilhuber@cornell.edu>
-22 December 2015
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+15 April 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:QWIPU_Data_Schema.pdf[Printable version] )
@@ -10,10 +10,8 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_4.0.1[ces.qwi.feedback@census.gov].
+.
 ==============================================
 	
 
@@ -317,11 +315,16 @@ include::label_flags.csv[]
 
 
 == [[changes]] Changes
+For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
 - 2015-09-14: Initial release
 - 2015-12-10: Added consolidated geography label file label_geography_all.csv
 - 2015-12-22: Updated the identification of the correct geo vintage
+- 2016-04-07: Fixed typo in variables_qwipu.csv (FrmJbLsS, EarnHirNS and status variables)
+- 2016-04-11: Fixed error in CBSA names (failure to actually update to 2014 Geovintage)
+- 2016-04-11: Corrected WIB naming change in Florida and Ohio
+- 2016-04-13: Fixed typo in variables_qwipu.csv (HirAS, HirNS, and status variables)
 
 === Version 4.0.1 from 4.0
 - 2015-02-24: removed obsolete flag values
@@ -336,6 +339,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Tue Dec 22 22:35:49 EST 2015
+This revision: Fri Apr 15 11:23:55 EDT 2016
 *******************
 

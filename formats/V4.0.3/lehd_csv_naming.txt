@@ -1,16 +1,14 @@
 
-****** LEHD Public Use CSV Naming Schema v4.0.3 - CSV Naming Convention ******
+****** LEHD Public Use CSV Naming Schema V4.0.3 - CSV Naming Convention ******
 Lars Vilhuber
-<lars.vilhuber@cornell.edu>
-14 September 2015
+<ces.qwi.feedback@census.gov>
+15 April 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-            This document is not an official Census Bureau publication. It is
-[Important] compiled from publicly accessible information by Lars Vilhuber
-            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
-            welcome. Please write us at lars.vilhuber@cornell.edu.
+[Important] Feedback is welcome. Please write us at
+            ces.qwi.feedback@census.gov.
 ***** 1. Purpose *****
 The public-use Quarterly Workforce Indicators (QWI) data from the Longitudinal
 Employer-Household Dynamics Program are available for download with the
@@ -106,6 +104,16 @@ type Description
 5.  Changes
 **** 5.1. This version (revisions) ****
     * 2015-09-14: Initial release
+    * 2015-12-10: Added consolidated geography label file
+      label_geography_all.csv
+    * 2015-12-22: Updated the identification of the correct geo vintage
+    * 2016-04-07: Fixed typo in variables_qwipu.csv (FrmJbLsS, EarnHirNS and
+      status variables)
+    * 2016-04-11: Fixed error in CBSA names (failure to actually update to 2014
+      Geovintage)
+    * 2016-04-11: Corrected WIB naming change in Florida and Ohio
+    * 2016-04-13: Fixed typo in variables_qwipu.csv (HirAS, HirNS, and status
+      variables)
 **** 5.2. Version 4.0.1 from 4.0 ****
     * 2015-02-24: removed obsolete flag values
     * 2015-04-01: updated IL, NE geography definitions
@@ -114,6 +122,6 @@ type Description
 **** 5.4. Version 4.0.3 from 4.0.2 ****
     * 2015-09-14: switched Geovintage to 2014, updated AK and SD files, added
       MA.
-This revision: Mon Sep 14 11:18:52 EDT 2015
+This revision: Fri Apr 15 11:23:53 EDT 2016
 ===============================================================================
-Last updated 2015-09-14 11:18:52 EDT
+Last updated 2016-04-15 11:23:53 EDT

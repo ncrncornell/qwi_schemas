@@ -1,17 +1,14 @@
 LEHD Public Use Data Schema Versioning
 ======================================
-Lars Vilhuber <lars.vilhuber@cornell.edu>
-15 March 2016
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+15 April 2016
 ( [Printable version](VERSIONING.pdf) )
 
 > **Important**
 >
-> This document is not an official Census Bureau publication. It is
-> compiled from publicly accessible information by Lars Vilhuber ([Labor
-> Dynamics Institute, Cornell
-> University](http://www.ilr.cornell.edu/ldi/)). Feedback is welcome.
-> Please write us at
-> [lars.vilhuber@cornell.edu](mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4).
+> Feedback is welcome. Please write us at
+> [ces.qwi.feedback@census.gov](mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_4.0.1).
+> .
 
 Scope
 =====
@@ -164,8 +161,8 @@ Examples of "patch"-level changes are:
 -   updated geography definitions (changes in state-specific geographies
     impacting a small set of areas, for instance a WIB or a small number
     of counties) (see CHANGES in [V4.0.1](V4.0.1/CHANGES.txt),
-    [V4.0.2](V4.0.2/CHANGES.txt), [V4.0.3](V4.0.3/CHANGES.txt) for
-    examples)
+    [V4.0.2](V4.0.2/CHANGES.txt), [V4.0.3](V4.0.3/CHANGES.txt)
+    for examples)
 
 -   change in NAICS coding affecting only a small number of industries
     (see CHANGES in [V4.0.2](V4.0.2/CHANGES.txt) for an example).
@@ -220,4 +217,4 @@ in each versioned schema directory.
 
 -   V1.0 2016-03-15: First release.
 
-This revision: Tue Mar 15 18:01:51 EDT 2016
+This revision: Fri Apr 15 11:26:36 EDT 2016
