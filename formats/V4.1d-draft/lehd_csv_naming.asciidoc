@@ -1,6 +1,6 @@
-= LEHD Public Use CSV Naming Schema v4.1c-draft - CSV Naming Convention
-Lars Vilhuber <lars.vilhuber@cornell.edu>
-25 August 2015
+= LEHD Public Use CSV Naming Schema V4.1d-draft - CSV Naming Convention
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+15 April 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -10,12 +10,9 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
 ==============================================
-
+	
 
 Purpose
 -------
@@ -165,7 +162,7 @@ include::naming_ext.csv[]
 
 == [[changes]] Changes
 
-=== This version from previous releases of this document
+=== This version from previous releases of V4.1 draft schema documents
 - 2015-02-25: corrected flag values
 - 2015-02-25: documents are now identified by date, not revision
 - 2015-03-10: Correction of the TIGER vintage that is used for geographic references
@@ -181,14 +178,25 @@ include::naming_ext.csv[]
 - 2015-08-07: Minor text change for agg_level, modified agg_level file.
 - 2015-08-12: Removed the last 4 rows of variables_j2jod.csv, since they are not on the current beta J2JOD files.
 - 2015-08-25: Added a extension component [ext] to the file naming convention to reflect availability of Excel files (and PDF files)
+- 2016-03-16: Removed extraneous empty lines
+- 2016-04-12: Fixed typo in variables_qwi.csv (FrmJbLsS, EarnHirNS and status variables)
+- 2016-04-12: Incorporated all state-level geography from 4.0.5
+- 2016-04-12: Added additional geo_level for CBSA (complete)
+- 2016-04-12: Added additional agg_level values
+- 2016-04-12: Clarified labels of j2jod identifiers
+- 2016-04-12: Renamed label_geography_all as label_geography
+- 2016-04-12: Added a column geo_level to all label_geography_* files
 
-=== Version 4.1c-draft from 4.0
+
+=== Version 4.1d-draft from 4.0.1
 - added J2J, National QWI spec
 - added geohi category of ALL, US
 - added definitions of variability measures
 - added definitions of rates on separate file
 - added naming convention for additional files
 - added agg_level variable
+- added additional geo_level for CBSA (complete)
+- added SHP files and description thereof
 
 [IMPORTANT]
 .Important
@@ -198,6 +206,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Tue Aug 25 23:26:26 EDT 2015
+This revision: Fri Apr 15 13:22:37 EDT 2016
 *******************
 
