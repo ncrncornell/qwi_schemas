@@ -2,11 +2,7 @@
 ****** LEHD Public Use Data Schema V4.1d-draft ******
 Lars Vilhuber
 <ces.qwi.feedback@census.gov>
-<<<<<<< HEAD
 04 May 2016
-=======
-15 April 2016
->>>>>>> fce1e7d035de42b149f989886808acbd07481415
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -915,12 +911,6 @@ flag label
     * added agg_level variable
     * added additional geo_level for CBSA (complete)
     * added SHP files and description thereof
-<<<<<<< HEAD
-This revision: Wed May 4 13:03:00 EDT 2016
+This revision: Wed May 4 13:04:19 EDT 2016
 ===============================================================================
-Last updated 2016-05-04 13:03:00 EDT
-=======
-This revision: Fri Apr 15 13:22:26 EDT 2016
-===============================================================================
-Last updated 2016-04-15 13:22:26 EDT
->>>>>>> fce1e7d035de42b149f989886808acbd07481415
+Last updated 2016-05-04 13:04:19 EDT
