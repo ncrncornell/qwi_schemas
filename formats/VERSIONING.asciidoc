@@ -1,125 +1,20 @@
-#!/bin/bash
-# set defaults
-toclevels=3
-# print out info
-if [[ -z $1 ]]
-then
-echo "
-	$0 [start|version]
-
-	will build the format documentation from CSV files and a template.
-
-	Version = cornell|draft|official changes a note in the document
-	"
-	exit 1
-fi
-
-if [[ "$1" = "start" ]]
-then
-# parse version from directory
-   version=cornell
-else
-   version=$1
-fi
-case $version in
-	cornell)
-	author=lars.vilhuber@cornell.edu
-	;;
-	draft)
-	author=lars.vilhuber@census.gov
-	;;
-	official)
-	author=ces.qwi.feedback@census.gov
-	;;
-esac
-cwd=$(pwd)
-numversion=${cwd##*/}
-
-# create ascii doc version
-basefile=VERSIONING
-asciifile=${basefile}.asciidoc
-
-echo "LEHD Public Use Data Schema Versioning" > $asciifile
-echo "======================================" >> $asciifile
-echo "Lars Vilhuber <${author}>" >> $asciifile
-echo "$(date +%d\ %B\ %Y)
-// a2x: --dblatex-opts \"-P latex.output.revhistory=0 --param toc.section.depth=${toclevels}\"
+LEHD Public Use Data Schema Versioning
+======================================
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+27 May 2016
+// a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:VERSIONING.pdf[Printable version] )
 
-" >> $asciifile
-# A note on the relevance/beta/draft status of this file.
-case $version in
-	cornell)
-	echo "
-[IMPORTANT]
-.Important
-==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
-==============================================
-	" >> $asciifile
-	;;
-	draft)
-	echo "
-[IMPORTANT]
-.Important
-==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:${author}?subject=LEHD_Schema_draft[${author}].
-==============================================
-	" >> $asciifile
-	;;
-	official)
-	echo "
+
+
 [IMPORTANT]
 .Important
 ==============================================
 Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_4.0.1[ces.qwi.feedback@census.gov].
 .
 ==============================================
-	" >> $asciifile
-	;;
-esac
-
-# Extract ASCIIDOC payload from this script
-function untar_payload()
-{
-	match=$(grep --text --line-number '^PAYLOAD:$' $0 | cut -d ':' -f 1)
-	payload_start=$((match + 1))
-	tail -n +$payload_start $0
-}
-
-untar_payload >> $asciifile
-
-echo "
-
-<<<
-*******************
-This revision: $(date)
-*******************
-" >> $asciifile
-echo "$asciifile created"
-asciidoc -a icons -a toc -a numbered -a linkcss -a toclevels=$toclevels -a outfilesuffix=.html $asciifile
-[[ -f ${basefile}.html  ]] && echo "${basefile}.html created"
-a2x -f pdf -a icons -a toc -a numbered -a outfilesuffix=.pdf $asciifile
-[[ -f ${basefile}.pdf  ]] && echo "${basefile}.pdf created"
-a2x -f docbook -a icons -a toc -a numbered  $asciifile
-[[ -f ${basefile}.xml  ]] || echo "Error: ${basefile}.xml not created"
-# workaround for missing title
-head -4 $asciifile > ${basefile}.md
-pandoc -t markdown_strict -f docbook ${basefile}.xml >> ${basefile}.md
-[[ -f ${basefile}.md  ]] && echo "${basefile}.md created"
-echo "Removing tmp files and $asciifile"
-rm tmp*
-#rm $asciifile
-rm ${basefile}.xml
-exit 0
-#
-# ==================== end of script
-#
-PAYLOAD:
+	
 [[scope]]
 Scope
 -----
@@ -299,3 +194,10 @@ This section is reserved for documentation of changes to this document. For docu
 
 * V1.0 2016-03-15: First release.
 * V1.1 2016-05-27: Minor layout changes.
+
+
+<<<
+*******************
+This revision: Fri May 27 11:39:36 EDT 2016
+*******************
+

@@ -1,7 +1,7 @@
 LEHD Public Use Data Schema Versioning
 ======================================
 Lars Vilhuber <ces.qwi.feedback@census.gov>
-15 April 2016
+27 May 2016
 ( [Printable version](VERSIONING.pdf) )
 
 > **Important**
@@ -35,12 +35,12 @@ updated to reflect corrections and enhancements. All data releases were
 accompanied by a set of CSV files for allowable values of variables and
 flags, accompanying each collection of tabulations for each state.
 
-Starting with release R2015Q2, a more formal and flexible structure was
-implemented, and published as V4.0.1. As changes occur to elements of
-the schema, version numbers are incremented (see
-[Versioning](#Versioning)). Broader changes are first published as draft
-schemas (typically used by draft or "beta" releases of data), before
-becoming finalized. All versions are retained on this server.
+Starting with release R2015Q2, a more formal, flexible, and
+machine-readable structure was implemented, and published as V4.0.1. As
+changes occur to elements of the schema, version numbers are incremented
+(see [Versioning](#Versioning)). Broader changes are first published as
+draft schemas (typically used by draft or "beta" releases of data),
+before becoming finalized. All versions are retained on this server.
 
 -   [v3.5](v3.5) First documented schema
 
@@ -55,19 +55,20 @@ becoming finalized. All versions are retained on this server.
 Usage
 =====
 
-Each data release is accompanied by a file specifying a compact notation
-for metadata. For instance, the R2015Q2 release of Missouri QWI by race
-and ethnicity for all firm types (archived
+Each **data** release is accompanied by a file specifying a compact
+notation for metadata. For instance, the R2015Q2 release of Missouri QWI
+by race and ethnicity for all firm types (archived
 [here](http://download.vrdc.cornell.edu/qwipu/R2015Q2/mo/rh/f/) or
 [here](http://lehd.ces.census.gov/pub/mo/R2015Q2/DVD-rh_f/)) would have
 a file called *version\_rh\_f.txt* with the following content:
 
     QWIRH_F MO 29 1995:1-2014:3 V4.0.1 R2015Q2 qwipu_mo_20150601_1902
 
-where the fifth component (V4.0.1) identifies the schema being used.
-Thus, all value labels, the naming and structure of the files, the
+The fifth component (V4.0.1) identifies the version of the schema being
+used. Thus, all value labels, the naming and structure of the files, the
 geographic and industry coding vintages, etc. can be deduced from the
-information available in the [V4.0.1](V4.0.1) directory.
+information available in the
+[V4.0.1](http://lehd.ces.census.gov/data/schema/V4.0.1) directory.
 
 Names of data files follow certain rules, which are documented in the
 file "lehd\_csv\_naming".
@@ -85,7 +86,7 @@ labels provided. These definitions are summarized in the file
 "lehd\_public\_use\_schema" (formerly named "QWIPU\_Data\_Schema.pdf").
 
 -   For instance, in the example above, the file can be found at
-    link:V4.0.1/lehd\_public\_use\_schema.html
+    [V4.0.1/lehd\_public\_use\_schema.html](V4.0.1/lehd_public_use_schema.html)
 
 -   (QWI) **indicators** are named and listed in the section
     "[Indicators](V4.0.1/lehd_public_use_schema.html#_a_id_indicators_a_indicators)"
@@ -161,16 +162,20 @@ Examples of "patch"-level changes are:
 -   updated geography definitions (changes in state-specific geographies
     impacting a small set of areas, for instance a WIB or a small number
     of counties) (see CHANGES in [V4.0.1](V4.0.1/CHANGES.txt),
-    [V4.0.2](V4.0.2/CHANGES.txt), [V4.0.3](V4.0.3/CHANGES.txt)
-    for examples)
+    [V4.0.2](V4.0.2/CHANGES.txt), [V4.0.3](V4.0.3/CHANGES.txt) for
+    examples)
 
--   change in NAICS coding affecting only a small number of industries
-    (see CHANGES in [V4.0.2](V4.0.2/CHANGES.txt) for an example).
+-   change in [North American Industry Coding
+    System](http://www.census.gov/eos/www/naics/) (NAICS) coding
+    affecting only a small number of industries (see CHANGES in
+    [V4.0.2](V4.0.2/CHANGES.txt) for an example).
 
-Switching from SIC to NAICS would have been a *major* version number
-change, changing from NAICS 1997 to 2007 - which had more significant
-changes, but did not fundamentally change the way the data are read in -
-would have been a *minor* version number change.
+Switching from [Standard Industrial
+Classification](https://www.osha.gov/pls/imis/sic_manual.html) (SIC) to
+NAICS would have been a *major* version number change, changing from
+NAICS 1997 to 2007 - which had more significant changes, but did not
+fundamentally change the way the data are read in - would have been a
+*minor* version number change.
 
 Additional revisions within a "patch"-level schema will be identified in
 the CHANGES.txt by date, but will not otherwise carry a different
@@ -217,4 +222,6 @@ in each versioned schema directory.
 
 -   V1.0 2016-03-15: First release.
 
-This revision: Fri Apr 15 11:26:36 EDT 2016
+-   V1.1 2016-05-27: Minor layout changes.
+
+This revision: Fri May 27 11:39:36 EDT 2016
