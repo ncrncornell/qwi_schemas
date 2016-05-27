@@ -113,7 +113,7 @@ pandoc -t markdown_strict -f docbook ${basefile}.xml >> ${basefile}.md
 [[ -f ${basefile}.md  ]] && echo "${basefile}.md created"
 echo "Removing tmp files and $asciifile"
 rm tmp*
-#rm $asciifile
+rm $asciifile
 rm ${basefile}.xml
 exit 0
 #
