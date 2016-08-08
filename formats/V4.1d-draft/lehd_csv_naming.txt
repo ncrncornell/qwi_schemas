@@ -1,15 +1,11 @@
 
 ****** LEHD Public Use CSV Naming Schema V4.1d-draft - CSV Naming Convention
 ******
-Lars Vilhuber
-<ces.qwi.feedback@census.gov>
-15 April 2016
+Lars Vilhuber <>
+08 August 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
-            Important
-[Important] Feedback is welcome. Please write us at
-            ces.qwi.feedback@census.gov.
 ***** 1. Purpose *****
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
@@ -28,6 +24,19 @@ For the specified files, this is the first schema.
 All files are preceded by a file type definition, followed by additional
 information on the aggregation level of the file, or some other identifier.
 [TYPE]_[DETAILS].[EXT]
+( naming_convention.csv )
+                 type       Used By                 Description
+            [type]_[id]     qwix                    CSV files queried from the
+                                                    LED Extraction Tool at
+                                                    http://
+                                                    ledextract.ces.census.gov/.
+   [type]_[geohi]_[demo]_   qwi qwir qwiv qwivr j2j Common convention for
+  [fas]_[geocat]_[indcat]_  j2jr j2jod              currently provided files.
+       [ownercat]_[sa]
+      [type]_[geohi]_       j2j j2jr j2jod          Certain files are provided
+[all,all_aggregations]_[sa]                         in a consolidated format
+                                                    containing multiple
+                                                    aggregations.
 **** 4.1. QWIPU from the LED Extraction Tool ****
 Files downloaded through the LED Extraction Tool at http://
 ledextract.ces.census.gov/ follow the following naming convention:
@@ -154,6 +163,7 @@ type Description
 csv  Comma-Separated file
 pdf  PDF file (printable)
 xls  Excel file (only select output)
+xlsx Excel file (not available for larger files)
 6.  Changes
 **** 6.1. This version from previous releases of V4.1 draft schema documents
 ****
@@ -202,6 +212,6 @@ xls  Excel file (only select output)
     * added SHP files and description thereof
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Fri Apr 15 13:22:37 EDT 2016
+This revision: Mon Aug 8 15:53:51 EDT 2016
 ===============================================================================
-Last updated 2016-04-15 13:22:37 EDT
+Last updated 2016-08-08 15:53:51 EDT

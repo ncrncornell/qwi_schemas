@@ -1,18 +1,11 @@
 = LEHD Public Use Data Schema V4.1d-draft
-Lars Vilhuber <ces.qwi.feedback@census.gov>
-04 May 2016
+Lars Vilhuber <>
+08 August 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
 
 
-
-[IMPORTANT]
-.Important
-==============================================
-Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema[ces.qwi.feedback@census.gov].
-==============================================
-	
 
 Purpose
 -------
@@ -604,6 +597,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-This revision: Wed May  4 13:04:19 EDT 2016
+This revision: Mon Aug  8 15:54:01 EDT 2016
 *******************
 
