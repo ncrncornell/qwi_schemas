@@ -2,7 +2,7 @@
 ****** LEHD Public Use CSV Naming Schema V4.1d-draft - CSV Naming Convention
 ******
 Lars Vilhuber <>
-08 August 2016
+09 August 2016
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -201,6 +201,7 @@ xlsx Excel file (not available for larger files)
     * 2016-04-12: Clarified labels of j2jod identifiers
     * 2016-04-12: Renamed label_geography_all as label_geography
     * 2016-04-12: Added a column geo_level to all label_geography_* files
+    * 2016-08-08: Corrected erroneous Oregon geography labels.
 **** 6.2. Version 4.1d-draft from 4.0.1 ****
     * added J2J, National QWI spec
     * added geohi category of ALL, US
@@ -212,6 +213,6 @@ xlsx Excel file (not available for larger files)
     * added SHP files and description thereof
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Mon Aug 8 18:15:58 EDT 2016
+This revision: Tue Aug 9 08:00:55 EDT 2016
 ===============================================================================
-Last updated 2016-08-08 18:15:58 EDT
+Last updated 2016-08-09 08:00:55 EDT

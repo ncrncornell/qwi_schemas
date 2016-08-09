@@ -1,6 +1,6 @@
 = LEHD Public Use CSV Naming Schema V4.1d-draft - CSV Naming Convention
 Lars Vilhuber <>
-08 August 2016
+09 August 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 
 ( link:lehd_csv_naming.pdf[Printable version] )
@@ -186,6 +186,7 @@ include::naming_ext.csv[]
 - 2016-04-12: Clarified labels of j2jod identifiers
 - 2016-04-12: Renamed label_geography_all as label_geography
 - 2016-04-12: Added a column geo_level to all label_geography_* files
+- 2016-08-08: Corrected erroneous Oregon geography labels.
 
 
 === Version 4.1d-draft from 4.0.1
@@ -206,6 +207,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Mon Aug  8 18:15:58 EDT 2016
+This revision: Tue Aug  9 08:00:55 EDT 2016
 *******************
 

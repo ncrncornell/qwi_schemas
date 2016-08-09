@@ -1,6 +1,11 @@
 = LEHD Public Use Data Schema V4.1d-draft
+<<<<<<< HEAD
 Lars Vilhuber <>
 08 August 2016
+=======
+Lars Vilhuber <lars.vilhuber@census.gov>
+09 August 2016
+>>>>>>> b61e7753afc8e697cfb85fd6f137f8e1a2f94da1
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_public_use_schema.pdf[Printable version] )
@@ -582,6 +587,7 @@ include::label_flags.csv[]
 - 2016-04-12: Clarified labels of j2jod identifiers
 - 2016-04-12: Renamed label_geography_all as label_geography
 - 2016-04-12: Added a column geo_level to all label_geography_* files
+- 2016-08-08: Corrected erroneous Oregon geography labels.
 
 
 === Version 4.1d-draft from 4.0.1
@@ -597,6 +603,10 @@ include::label_flags.csv[]
 
 <<<
 *******************
+<<<<<<< HEAD
 This revision: Mon Aug  8 18:16:05 EDT 2016
+=======
+This revision: Tue Aug  9 07:58:55 EDT 2016
+>>>>>>> b61e7753afc8e697cfb85fd6f137f8e1a2f94da1
 *******************
 
