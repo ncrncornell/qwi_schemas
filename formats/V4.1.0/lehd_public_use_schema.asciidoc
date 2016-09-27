@@ -1,5 +1,5 @@
 = LEHD Public Use Data Schema V4.1.0
-Lars Vilhuber <lars.vilhuber@census.gov>
+Lars Vilhuber <ces.qwi.feedback@census.gov>
 26 September 2016
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
@@ -10,7 +10,7 @@ Lars Vilhuber <lars.vilhuber@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema[ces.qwi.feedback@census.gov].
 ==============================================
 	
 
@@ -604,6 +604,6 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 
 <<<
 *******************
-This revision: Mon Sep 26 20:35:51 EDT 2016
+This revision: Mon Sep 26 20:41:00 EDT 2016
 *******************
 

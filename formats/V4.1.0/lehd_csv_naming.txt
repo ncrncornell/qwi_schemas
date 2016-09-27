@@ -7,8 +7,8 @@ Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-[Important] This specification is draft. Feedback is welcome. Please write us
-            at ces.qwi.feedback@census.gov.
+[Important] Feedback is welcome. Please write us at
+            ces.qwi.feedback@census.gov.
 ***** 1. Purpose *****
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
@@ -220,6 +220,6 @@ For a description of how schema files are versioned, see main_directory.
       3a0975e
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Mon Sep 26 20:35:41 EDT 2016
+This revision: Mon Sep 26 20:40:53 EDT 2016
 ===============================================================================
-Last updated 2016-09-26 20:35:41 EDT
+Last updated 2016-09-26 20:40:53 EDT

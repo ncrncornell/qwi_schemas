@@ -11,7 +11,7 @@ Lars Vilhuber <ces.qwi.feedback@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
+Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
 ==============================================
 	
 
@@ -216,6 +216,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Mon Sep 26 20:35:41 EDT 2016
+This revision: Mon Sep 26 20:40:53 EDT 2016
 *******************
 
