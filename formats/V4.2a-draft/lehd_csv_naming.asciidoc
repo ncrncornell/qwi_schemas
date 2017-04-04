@@ -1,21 +1,11 @@
 = LEHD Public Use CSV Naming Schema V4.2a-draft - CSV Naming Convention
-Lars Vilhuber <lars.vilhuber@cornell.edu>
+Lars Vilhuber <>
 04 April 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 
 ( link:lehd_csv_naming.pdf[Printable version] )
 
-
-
-[IMPORTANT]
-.Important
-==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
-==============================================
 
 
 Purpose
@@ -211,6 +201,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Tue Apr  4 15:13:45 EDT 2017
+This revision: Tue Apr  4 15:19:57 EDT 2017
 *******************
 
