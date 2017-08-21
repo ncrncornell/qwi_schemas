@@ -1,12 +1,19 @@
 = LEHD Public Use CSV Naming Schema V4.1.0 - CSV Naming Convention
-Lars Vilhuber <>
-07 March 2017
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+21 August 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 
 ( link:lehd_csv_naming.pdf[Printable version] )
 
 
+
+[IMPORTANT]
+.Important
+==============================================
+Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
+==============================================
+	
 
 Purpose
 -------
@@ -178,6 +185,7 @@ For a description of how schema files are versioned, see link:../VERSIONING{ext-
 - 2017-03-06: Removed two variables from variables_j2jod.csv that were not actually on the CSV file
 - 2017-03-06: Corrected bad reference to release RXXXX, which should have been R2016Q4
 - 2017-03-07: Corrected naming of files inside shapefile ZIP files
+- 2017-08-21: Corrected naming of three of the status flags that have "Rate" at the end. That should be just "R". 
 
 === Version 4.1 from 4.0.5
 - 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
@@ -215,6 +223,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Tue Mar  7 16:21:02 EST 2017
+This revision: Mon Aug 21 16:56:47 EDT 2017
 *******************
 

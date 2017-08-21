@@ -1,10 +1,14 @@
 
 ****** LEHD Public Use CSV Naming Schema V4.1.0 - CSV Naming Convention ******
-Lars Vilhuber <>
-07 March 2017
+Lars Vilhuber
+<ces.qwi.feedback@census.gov>
+21 August 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
+            Important
+[Important] Feedback is welcome. Please write us at
+            ces.qwi.feedback@census.gov.
 ***** 1. Purpose *****
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
@@ -184,6 +188,8 @@ For a description of how schema files are versioned, see main_directory.
     * 2017-03-06: Corrected bad reference to release RXXXX, which should have
       been R2016Q4
     * 2017-03-07: Corrected naming of files inside shapefile ZIP files
+    * 2017-08-21: Corrected naming of three of the status flags that have
+      "Rate" at the end. That should be just "R".
 **** 7.2. Version 4.1 from 4.0.5 ****
     * 2016-08-08: Implemented select changes from V4.1d-draft: Key changes are
     * Changed structure of state-level geography labels (flat directory
@@ -221,6 +227,6 @@ For a description of how schema files are versioned, see main_directory.
       government from fg → of. At this time, no such files have been released.
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Tue Mar 7 16:21:02 EST 2017
+This revision: Mon Aug 21 16:56:47 EDT 2017
 ===============================================================================
-Last updated 2017-03-07 16:21:02 EST
+Last updated 2017-08-21 16:56:47 EDT

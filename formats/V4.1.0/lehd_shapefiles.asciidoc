@@ -1,6 +1,6 @@
 = LEHD Public Use Shapefile Data
 Heath Hayward, Matthew Graham, Lars Vilhuber <Patrick.Hayward@census.gov>
-07 March 2017
+21 August 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_shapefiles.pdf[Printable version] )
@@ -155,6 +155,6 @@ Changes
 
 <<<
 *******************
-This revision: Tue Mar  7 16:21:15 EST 2017
+This revision: Mon Aug 21 16:56:58 EDT 2017
 *******************
 
