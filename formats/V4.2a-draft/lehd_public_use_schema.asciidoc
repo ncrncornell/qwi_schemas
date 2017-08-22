@@ -10,7 +10,7 @@ Lars Vilhuber <ces.qwi.feedback@census.gov>
 [IMPORTANT]
 .Important
 ==============================================
-Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema[ces.qwi.feedback@census.gov].
+This schema is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema[ces.qwi.feedback@census.gov].
 ==============================================
 	
 
