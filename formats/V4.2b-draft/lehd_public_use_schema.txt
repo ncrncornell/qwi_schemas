@@ -1,16 +1,14 @@
 
 ****** LEHD Public Use Data Schema V4.2b-draft ******
 Lars Vilhuber
-<lars.vilhuber@cornell.edu>
-21 August 2017
+<ces.qwi.feedback@census.gov>
+22 August 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-            This document is not an official Census Bureau publication. It is
-[Important] compiled from publicly accessible information by Lars Vilhuber
-            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
-            welcome. Please write us at lars.vilhuber@cornell.edu.
+[Important] This specification is draft. Feedback is welcome. Please write us
+            at ces.qwi.feedback@census.gov.
 ***** 1. Purpose *****
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
@@ -1329,6 +1327,6 @@ For a description of how schema files are versioned, see main_directory.
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Mon Aug 21 16:14:41 EDT 2017
+This revision: Tue Aug 22 11:51:43 EDT 2017
 ===============================================================================
-Last updated 2017-08-21 16:14:41 EDT
+Last updated 2017-08-22 11:51:43 EDT
