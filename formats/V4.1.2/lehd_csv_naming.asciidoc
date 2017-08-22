@@ -1,6 +1,6 @@
-= LEHD Public Use CSV Naming Schema V4.1.1 - CSV Naming Convention
-Lars Vilhuber <lars.vilhuber@cornell.edu>
-07 March 2017
+= LEHD Public Use CSV Naming Schema V4.1.2 - CSV Naming Convention
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+22 August 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 
@@ -11,12 +11,9 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
+Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
 ==============================================
-
+	
 
 Purpose
 -------
@@ -181,7 +178,12 @@ include::naming_ext.csv[]
 For a description of how schema files are versioned, see link:../VERSIONING{ext-relative}[main directory].
 
 === This version (revisions)
-- 2017-03-06: Initial release
+- 2017-06-19: Initial release
+- 2017-08-21: Corrected naming of three of the status flags that have "Rate" at the end. That should be just "R". 
+
+
+=== Version 4.1.2 from 4.1.1
+- 2017-06-19: Updated LEHD shape files, Louisiana and Alabama WIB definitions
 
 === Version 4.1.1 from 4.1.0
 - 2017-03-06: Modifed naming_geo_cat.csv, gb value to read "Metropolitan (complete)", gm to "Metropolitan/Micropolitan (state parts)"
@@ -204,6 +206,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Tue Mar  7 13:49:12 EST 2017
+This revision: Tue Aug 22 11:40:59 EDT 2017
 *******************
 
