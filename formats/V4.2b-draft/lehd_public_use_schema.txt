@@ -2,7 +2,7 @@
 ****** LEHD Public Use Data Schema V4.2b-draft ******
 Lars Vilhuber
 <ces.qwi.feedback@census.gov>
-01 September 2017
+07 September 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
@@ -994,9 +994,94 @@ sex label
  0  All Sexes
  1  Male
  2  Female
-**** 6.13. stusps ****
+**** 6.13. Industry ****
+*** 6.13.1. Industry levels ***
+( label_ind_level.csv )
+ind_level label
+      A   All Industries
+      S   NAICS Sectors
+      3   NAICS Subsectors
+      4   NAICS Industry Groups
+*** 6.13.2. Industry ***
+( label_industry.csv )
+Only a small subset of available values shown. The 2012 NAICS (North American
+Industry Classification System) is used for all years. QWI releases prior to
+R2015Q3 used the 2007 NAICS classification (see Schema_v4.0.1). For a full
+listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/
+naics/naicsrch?chart=2012.
+industry label
+    00   All NAICS Sectors
+   000   All NAICS Subsectors
+   0000  All NAICS Industry Groups
+    11   Agriculture, Forestry, Fishing and Hunting
+   111   Crop Production
+   1111  Oilseed and Grain Farming
+   1112  Vegetable and Melon Farming
+    …
+   2382  Building Equipment Contractors
+   2383  Building Finishing Contractors
+   2389  Other Specialty Trade Contractors
+  31-33  Manufacturing
+   311   Food Manufacturing
+   3111  Animal Food Manufacturing
+   3112  Grain and Oilseed Milling
+   3113  Sugar and Confectionery Product Manufacturing
+    …
+6.14. Geography
+6.14.1.  Geographic levels
+Geography labels for data files are provided in separate files, by scope. Each
+file label_geograpy_SCOPE.csv may contain one or more types of records as
+flagged by geo_level. For convenience, a composite file containing all geocodes
+is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
+geography is used for all tabulations as of the R2015Q4 release.
+Shapefiles are described in a separate_document.
+( label_geo_level.csv )
+geo_level label         description                                                                  sourceurl
+      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census   http://
+          (complete)    Bureau’s Geography Division. Balance of state including micropolitan areas www.census.gov/
+                        are identified by custom codes as [ST]999                                    population/metro/
+      C   Counties      Identifies 5-digit FIPS/ANSI code for counties                               https://
+                                                                                                     www.census.gov/geo/
+                                                                                                     reference/codes/
+                                                                                                     cou.html
+      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and the http://
+          Micropolitan  5-digit CBSA code provided by the Census Bureau’s Geography Division       www.census.gov/
+          (state part)                                                                               population/metro/
+      N   National (50  Custom code using 00 to denote national scope
+          States + DC)
+      S   States        Identifies 2-digit FIPS/ANSI codes                                           https://
+                                                                                                     www.census.gov/geo/
+                                                                                                     reference/
+                                                                                                     ansi_statetables.html
+      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED State
+          Investment    Partners
+          Areas
+6.14.2. National and state-level values
+( label_fipsnum.csv )
+The file label_fipsnum.csv contains values and labels for all entities of
+geo_level N or S, and is a summary of separately available files.
+geography label                     geo_level
+     00   National (50 States + DC)       N
+     01   Alabama                         S
+     02   Alaska                          S
+     04   Arizona                         S
+     05   Arkansas                        S
+     06   California                      S
+     08   Colorado                        S
+     …
+     45   South Carolina                  S
+     46   South Dakota                    S
+     47   Tennessee                       S
+     48   Texas                           S
+     49   Utah                            S
+     50   Vermont                         S
+     51   Virginia                        S
+     53   Washington                      S
+6.14.3. State postal codes
+Some parts of the schema use (lower or upper-case) state postal codes.
 ( label_stusps.csv )
 geography stusps
+     00   US
      01   AL
      02   AK
      04   AZ
@@ -1050,149 +1135,68 @@ geography stusps
      56   WY
      72   PR
      78   VI
-**** 6.14. Industry ****
-*** 6.14.1. Industry levels ***
-( label_ind_level.csv )
-ind_level label
-      A   All Industries
-      S   NAICS Sectors
-      3   NAICS Subsectors
-      4   NAICS Industry Groups
-*** 6.14.2. Industry ***
-( label_industry.csv )
-Only a small subset of available values shown. The 2012 NAICS (North American
-Industry Classification System) is used for all years. QWI releases prior to
-R2015Q3 used the 2007 NAICS classification (see Schema_v4.0.1). For a full
-listing of all valid 2012 NAICS codes, see http://www.census.gov/cgi-bin/sssd/
-naics/naicsrch?chart=2012.
-industry label
-    00   All NAICS Sectors
-   000   All NAICS Subsectors
-   0000  All NAICS Industry Groups
-    11   Agriculture, Forestry, Fishing and Hunting
-   111   Crop Production
-   1111  Oilseed and Grain Farming
-   1112  Vegetable and Melon Farming
-    …
-   2382  Building Equipment Contractors
-   2383  Building Finishing Contractors
-   2389  Other Specialty Trade Contractors
-  31-33  Manufacturing
-   311   Food Manufacturing
-   3111  Animal Food Manufacturing
-   3112  Grain and Oilseed Milling
-   3113  Sugar and Confectionery Product Manufacturing
-    …
-6.15. Geography
-6.15.1.  Geographic levels
-Geography labels for data files are provided in separate files, by scope. Each
-file label_geograpy_SCOPE.csv may contain one or more types of records as
-flagged by geo_level. For convenience, a composite file containing all geocodes
-is available as label_geography.csv. The 2015 vintage of  Census_TIGER/Line
-geography is used for all tabulations as of the R2015Q4 release.
-Shapefiles are described in a separate_document.
-( label_geo_level.csv )
-geo_level label         description                                                                sourceurl
-      B   Metropolitan  Identifies 5-digit CBSA code for metropolitan areas provided by the Census http://
-          (complete)    Bureau’s Geography Division                                              www.census.gov/
-                                                                                                   population/metro/
-      C   Counties      Identifies 5-digit FIPS code                                               https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/codes/
-                                                                                                   cou.html
-      M   Metropolitan/ Identifies 7-digit code constructed from the 2-digit state FIPS code and   http://
-          Micropolitan  the 5-digit CBSA code provided by the Census Bureau’s Geography Division www.census.gov/
-          (state part)                                                                             population/metro/
-      N   National (50  Custom code using 00 to denote national scope
-          States + DC)
-      S   States        Identifies 2-digit FIPS code (also called "ANSI" codes)                    https://
-                                                                                                   www.census.gov/geo/
-                                                                                                   reference/
-                                                                                                   ansi_statetables.html
-      W   Workforce     2-digit state FIPS code and the 6-digit WIA identifier provided by LED
-          Investment    State Partners
-          Areas
-6.15.2. National and state-level values
-( label_fipsnum.csv )
-The file label_fipsnum.csv contains values and labels for all entities of
-geo_level N or S, and is a summary of separately available files.
-geography label                     geo_level
-     00   National (50 States + DC)       N
-     01   Alabama                         S
-     02   Alaska                          S
-     04   Arizona                         S
-     05   Arkansas                        S
-     06   California                      S
-     08   Colorado                        S
-     …
-     45   South Carolina                  S
-     46   South Dakota                    S
-     47   Tennessee                       S
-     48   Texas                           S
-     49   Utah                            S
-     50   Vermont                         S
-     51   Virginia                        S
-     53   Washington                      S
-6.15.3. Detailed state and substate level values
-Note: cross-state CBSA, in records of type geo_level = M, are present on files
-of type label_geography_XX.csv. A particular cross-state CBSA will appear on
-multiple files.
-Scope            Format file
-   US    label_geography_us.csv
-METRO  label_geography_metro.csv
+6.14.4. Detailed state and substate level values
+Files of type label_geography_[ST].csv will contain identifiers and labels for
+geographic areas entirely comprised within a given state [ST]. State-specific
+parts of cross-state CBSA, in records of type geo_level = M, are present on
+files of type label_geography_[ST].csv. The file label_geography_metro.csv
+contains labels for records of type geo_level = B, for metropolitan areas only.
+Scope   Types            Format file
+   US      N     label_geography_us.csv
+METRO      B   label_geography_metro.csv
 States
-   AK    label_geography_ak.csv
-   AL    label_geography_al.csv
-   AR    label_geography_ar.csv
-   AZ    label_geography_az.csv
-   CA    label_geography_ca.csv
-   CO    label_geography_co.csv
-   CT    label_geography_ct.csv
-   DC    label_geography_dc.csv
-   DE    label_geography_de.csv
-   FL    label_geography_fl.csv
-   GA    label_geography_ga.csv
-   HI    label_geography_hi.csv
-   IA    label_geography_ia.csv
-   ID    label_geography_id.csv
-   IL    label_geography_il.csv
-   IN    label_geography_in.csv
-   KS    label_geography_ks.csv
-   KY    label_geography_ky.csv
-   LA    label_geography_la.csv
-   MA    label_geography_ma.csv
-   MD    label_geography_md.csv
-   ME    label_geography_me.csv
-   MI    label_geography_mi.csv
-   MN    label_geography_mn.csv
-   MO    label_geography_mo.csv
-   MS    label_geography_ms.csv
-   MT    label_geography_mt.csv
-   NC    label_geography_nc.csv
-   ND    label_geography_nd.csv
-   NE    label_geography_ne.csv
-   NH    label_geography_nh.csv
-   NJ    label_geography_nj.csv
-   NM    label_geography_nm.csv
-   NV    label_geography_nv.csv
-   NY    label_geography_ny.csv
-   OH    label_geography_oh.csv
-   OK    label_geography_ok.csv
-   OR    label_geography_or.csv
-   PA    label_geography_pa.csv
-   RI    label_geography_ri.csv
-   SC    label_geography_sc.csv
-   SD    label_geography_sd.csv
-   TN    label_geography_tn.csv
-   TX    label_geography_tx.csv
-   UT    label_geography_ut.csv
-   VA    label_geography_va.csv
-   VT    label_geography_vt.csv
-   WA    label_geography_wa.csv
-   WI    label_geography_wi.csv
-   WV    label_geography_wv.csv
-   WY    label_geography_wy.csv
-**** 6.16. Aggregation level ****
+   AK  S C W M   label_geography_ak.csv
+   AL  S C W M   label_geography_al.csv
+   AR  S C W M   label_geography_ar.csv
+   AZ  S C W M   label_geography_az.csv
+   CA  S C W M   label_geography_ca.csv
+   CO  S C W M   label_geography_co.csv
+   CT  S C W M   label_geography_ct.csv
+   DC  S C W M   label_geography_dc.csv
+   DE  S C W M   label_geography_de.csv
+   FL  S C W M   label_geography_fl.csv
+   GA  S C W M   label_geography_ga.csv
+   HI  S C W M   label_geography_hi.csv
+   IA  S C W M   label_geography_ia.csv
+   ID  S C W M   label_geography_id.csv
+   IL  S C W M   label_geography_il.csv
+   IN  S C W M   label_geography_in.csv
+   KS  S C W M   label_geography_ks.csv
+   KY  S C W M   label_geography_ky.csv
+   LA  S C W M   label_geography_la.csv
+   MA  S C W M   label_geography_ma.csv
+   MD  S C W M   label_geography_md.csv
+   ME  S C W M   label_geography_me.csv
+   MI  S C W M   label_geography_mi.csv
+   MN  S C W M   label_geography_mn.csv
+   MO  S C W M   label_geography_mo.csv
+   MS  S C W M   label_geography_ms.csv
+   MT  S C W M   label_geography_mt.csv
+   NC  S C W M   label_geography_nc.csv
+   ND  S C W M   label_geography_nd.csv
+   NE  S C W M   label_geography_ne.csv
+   NH  S C W M   label_geography_nh.csv
+   NJ  S C W M   label_geography_nj.csv
+   NM  S C W M   label_geography_nm.csv
+   NV  S C W M   label_geography_nv.csv
+   NY  S C W M   label_geography_ny.csv
+   OH  S C W M   label_geography_oh.csv
+   OK  S C W M   label_geography_ok.csv
+   OR  S C W M   label_geography_or.csv
+   PA  S C W M   label_geography_pa.csv
+   RI  S C W M   label_geography_ri.csv
+   SC  S C W M   label_geography_sc.csv
+   SD  S C W M   label_geography_sd.csv
+   TN  S C W M   label_geography_tn.csv
+   TX  S C W M   label_geography_tx.csv
+   UT  S C W M   label_geography_ut.csv
+   VA  S C W M   label_geography_va.csv
+   VT  S C W M   label_geography_vt.csv
+   WA  S C W M   label_geography_wa.csv
+   WI  S C W M   label_geography_wi.csv
+   WV  S C W M   label_geography_wv.csv
+   WY  S C W M   label_geography_wy.csv
+**** 6.15. Aggregation level ****
 ( label_agg_level.csv )
 Measures within the J2J and QWI data products are tabulated on many different
 dimensions, including demographic characteristics, geography, industry, and
@@ -1276,27 +1280,27 @@ version_[demo]_[fas].txt
 version_[type].txt
 where each component is described in more detail in lehd_csv_naming.html.
 The contents contains the following elements:
-Component Source             Description
-  product [type]             Type as described in lehd_csv_naming.html
- demo_fas [demo]_[fas]       (optional - concatenated with product) used for
-                             QWI to distinguish separate tabulations from the
-                             legal [demo]_[fas] combinations as described in
-                             lehd_csv_naming.html
-      geo [_stusps] or Metro Covered [geography] (uppercase state postal code
-                             or the word MSA)
-     fips [geography]        Numeric (FIPS) geography code
-    start yyyy:q             Start year and quarter
-      end yyyy:q             End year and quarter
-   schema Vx.y.z             Version of the schema
-  release RyyyyQq            Release quarter (identifies when the data was
-                             created)
- internal various            Internal identifier used for provenance tracking
-For instance, the metadata for the R2017Q1 release of Missouri QWI Sex by Age
-tabulations for No firm size or age detail (obtained from here) has the
-following content:
+Component Source            Description
+product   [type]            Type as described in lehd_csv_naming.html
+demo_fas  [demo]_[fas]      (optional - concatenated with product) used for QWI
+                            to distinguish separate tabulations from the legal
+                            [demo]_[fas] combinations as described in
+                            lehd_csv_naming.html
+geo       [stusps] or METRO Covered [geography] (uppercase state postal code
+                            including entire nation or the word METRO)
+geonum    [geography]       Numeric geography code
+start     yyyy:q            Start year and quarter
+end       yyyy:q            End year and quarter
+schema    Vx.y.z            Version of the schema
+release   RyyyyQq           Release quarter (identifies when the data was
+                            created)
+internal  various           Internal identifier used for provenance tracking
+For instance, the metadata for the R2017Q1 release of "Missouri" "Kokomo QWI
+Sex by Age tabulations for No firm size or age detail (obtained from here) has
+the following content:
 QWISA_F MO 29 1995:1-2016:2 V4.1.1 R2017Q1 qwipu_mo_20170301_1230
-Similarly, the metadata for the R2017Q1 release of Missouri J2J tabulations
-(obtained from here) has the following content:
+Similarly, the metadata for the R2017Q1 release of "Missouri" "Kokomo J2J
+tabulations (obtained from here) has the following content:
 J2J MO 29 2000:2-2016:1 V4.2a-draft R2017Q1 j2jpu_mo_20170425_1760
 Some J2J metadata may contain multiple lines, as necessary.
 8.2. Additional metadata for J2JOD files (avail.csv)
@@ -1304,15 +1308,15 @@ Some J2J metadata may contain multiple lines, as necessary.
 Because the origin-destination (J2JOD) data link two regions, we provide an
 auxiliary file with the time range that cells containing data for each
 geographic pairing may appear in a data release.
-    variable   type    label
-   geo_level   Char(1) Geographic level of destination region
-   geography   Char(8) Geography code of destination region
+variable       type    label
+geo_level      Char(1) Geographic level of destination region
+geography      Char(8) Geography code of destination region
 geo_level_orig Char(1) Geographic level of origin region
 geography_orig Char(8) Geography code of origin region
-   start_year  Num     First year regional pair may be observed
+start_year     Num     First year regional pair may be observed
 start_quarter  Num     First quarter regional pair may be observed
-    end_year   Num     Last year regional pair may be observed
-  end_quarter  Num     Last quarter regional pair may be observed
+end_year       Num     Last year regional pair may be observed
+end_quarter    Num     Last quarter regional pair may be observed
 The reference region will always be either the origin or the destination.
 National tabulations contain records where both origin and destination are
 geo_level=N; state tabulations contain records where geo_level in (N,S); metro
@@ -1326,10 +1330,18 @@ For a description of how schema files are versioned, see main_directory.
     * 2017-09-01: Incorporates forgotten updates to j2japp descriptions. This
       does not affect the structure or contents of any released data files, but
       it affects the unreleased J2J app updates downstream.
+    * 2017-09-07: clarifying the version.txt description - removed the mention
+      of fips replacing by geonum
+    * 2017-09-07: Moved stusps to the geography section, where it rightfully
+      belongs.
+    * 2017-09-07: Clarified language and usage of metropolitan area codes in
+      label_geography_metro.csv, removed unused label_geography_cbsa.csv
+    * 2017-09-07: Expanded definition of [geohi] to include CBSA codes for
+      metropolitan areas
 **** 9.2. Version 4.2b-draft from V4.2a-draft ****
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Fri Sep 1 09:46:02 EDT 2017
+This revision: Thu Sep 7 15:31:06 EDT 2017
 ===============================================================================
-Last updated 2017-09-01 09:46:02 EDT
+Last updated 2017-09-07 15:31:06 EDT
