@@ -697,6 +697,7 @@ flag label
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
 <<<<<<< HEAD
+<<<<<<< HEAD
 This revision: Mon Oct 30 16:20:50 EDT 2017
 ===============================================================================
 Last updated 2017-10-30 16:20:50 EDT
@@ -705,3 +706,8 @@ This revision: Mon Dec 18 15:23:34 EST 2017
 ===============================================================================
 Last updated 2017-12-18 15:23:34 EST
 >>>>>>> a86dcd252c560e3a60b9b994109b3686442fe82e
+=======
+This revision: Mon Dec 18 15:47:16 EST 2017
+===============================================================================
+Last updated 2017-12-18 15:47:16 EST
+>>>>>>> 5d1dba3296781d0ca338cb83ea692be130c50790

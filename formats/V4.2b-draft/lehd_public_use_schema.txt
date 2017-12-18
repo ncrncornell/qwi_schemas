@@ -1341,10 +1341,12 @@ For a description of how schema files are versioned, see main_directory.
       metropolitan areas
     * 2017-10-30: Description on J2JOD earnings measures reversed, fixed. Only
       affects the J2J app metadata.
+    * 2017-12-18: Description on J2JOD earnings measures reversed, should have
+      also fixed on J2JOD description.
 **** 9.2. Version 4.2b-draft from V4.2a-draft ****
     * See Github
 **** 9.3. Version 4.2a-draft from 4.1.1 ****
     * See Github
-This revision: Mon Dec 18 15:31:08 EST 2017
+This revision: Mon Dec 18 15:49:02 EST 2017
 ===============================================================================
-Last updated 2017-12-18 15:31:08 EST
+Last updated 2017-12-18 15:49:02 EST
