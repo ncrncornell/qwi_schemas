@@ -2,19 +2,14 @@
 
 ****** LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft ******
 Lars Vilhuber
-<<<<<<< HEAD
-<lars.vilhuber@census.gov>
-30 October 2017
-=======
-<lars.vilhuber@cornell.edu>
-18 December 2017
->>>>>>> a86dcd252c560e3a60b9b994109b3686442fe82e
+<ces.qwi.feedback@census.gov>
+19 December 2017
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
             Important
-[Important] This specification is draft. Feedback is welcome. Please write us
-            at lars.vilhuber@census.gov.
+[Important] Feedback is welcome. Please write us at
+            ces.qwi.feedback@census.gov.
 ***** 1. Purpose *****
 The public-use Job-to-Job Flows (J2J) data provided by the Longitudinal
 Employer-Household Dynamics Program are accessible through the J2J_Explorer_
@@ -696,18 +691,6 @@ flag label
  11  Aggregate of cells not released because component cells do not meet U.S.
      Census Bureau publication standards
  12  Aggregate of cells - some of which have significantly distorted data
-<<<<<<< HEAD
-<<<<<<< HEAD
-This revision: Mon Oct 30 16:20:50 EDT 2017
+This revision: Tue Dec 19 16:05:10 EST 2017
 ===============================================================================
-Last updated 2017-10-30 16:20:50 EDT
-=======
-This revision: Mon Dec 18 15:23:34 EST 2017
-===============================================================================
-Last updated 2017-12-18 15:23:34 EST
->>>>>>> a86dcd252c560e3a60b9b994109b3686442fe82e
-=======
-This revision: Mon Dec 18 15:47:16 EST 2017
-===============================================================================
-Last updated 2017-12-18 15:47:16 EST
->>>>>>> 5d1dba3296781d0ca338cb83ea692be130c50790
+Last updated 2017-12-19 16:05:10 EST

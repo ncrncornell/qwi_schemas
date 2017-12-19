@@ -1,11 +1,6 @@
 = LEHD Public Use Data Schema for J2J Explorer (beta) V4.2b-draft
-<<<<<<< HEAD
-Lars Vilhuber <lars.vilhuber@census.gov>
-30 October 2017
-=======
-Lars Vilhuber <lars.vilhuber@cornell.edu>
-18 December 2017
->>>>>>> a86dcd252c560e3a60b9b994109b3686442fe82e
+Lars Vilhuber <ces.qwi.feedback@census.gov>
+19 December 2017
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 ( link:lehd_j2jexplorer_schema.pdf[Printable version] )
@@ -15,7 +10,7 @@ Lars Vilhuber <lars.vilhuber@cornell.edu>
 [IMPORTANT]
 .Important
 ==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:lars.vilhuber@census.gov?subject=LEHD_Schema_draft[lars.vilhuber@census.gov].
+Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema[ces.qwi.feedback@census.gov].
 ==============================================
 	
 
@@ -406,14 +401,6 @@ include::label_flags.csv[]
 
 <<<
 *******************
-<<<<<<< HEAD
-<<<<<<< HEAD
-This revision: Mon Oct 30 16:20:50 EDT 2017
-=======
-This revision: Mon Dec 18 15:23:34 EST 2017
->>>>>>> a86dcd252c560e3a60b9b994109b3686442fe82e
-=======
-This revision: Mon Dec 18 15:47:16 EST 2017
->>>>>>> 5d1dba3296781d0ca338cb83ea692be130c50790
+This revision: Tue Dec 19 16:05:10 EST 2017
 *******************
 
