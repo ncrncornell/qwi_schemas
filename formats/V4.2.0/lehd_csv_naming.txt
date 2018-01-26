@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 ****** LEHD Public Use CSV Naming Schema V4.2.0 - CSV Naming Convention ******
-Lars Vilhuber
-<lars.vilhuber@cornell.edu>
+Lars Vilhuber <>
 26 January 2018
 Table of Contents
 JavaScript must be enabled in your browser to display the table of contents.
 ( Printable_version )
-            Important
-            This document is not an official Census Bureau publication. It is
-[Important] compiled from publicly accessible information by Lars Vilhuber
-            (Labor_Dynamics_Institute,_Cornell_University). Feedback is
-            welcome. Please write us at lars.vilhuber@cornell.edu.
 ***** 1. Purpose *****
 The public-use data from the Longitudinal Employer-Household Dynamics Program,
 including the Quarterly Workforce Indicators (QWI) and Job-to-Job Flows (J2J),
@@ -225,6 +219,6 @@ For a description of how schema files are versioned, see main_directory.
       lags_j2j.csv), and its metadata (variables_lags.csv)
 [Important] Important
             Some of the data products noted above do not exist yet.
-This revision: Fri Jan 26 11:04:59 EST 2018
+This revision: Fri Jan 26 11:06:46 EST 2018
 ===============================================================================
-Last updated 2018-01-26 11:04:59 EST
+Last updated 2018-01-26 11:06:46 EST
