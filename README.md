@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.597959.svg)](https://doi.org/10.5281/zenodo.597959)
+
 # QWI Experimental Schemas
 Experimental QWIPU Schema files, that may or may not later be incorporated into public-use [QWI](http://lehd.ces.census.gov/data) file and content specifications.
 
@@ -19,9 +21,8 @@ You can browse the following schemas:
     * [V4.1.1](formats/V4.1.1/lehd_public_use_schema.html): The released V4.1.1 version.
     * [V4.1.2](formats/V4.1.2/lehd_public_use_schema.html): The released V4.1.2 version.
     * [V4.1.3](formats/V4.1.3/lehd_public_use_schema.html): The released V4.1.3 version.
-* V4.2 draft versions
-    * [V4.2a-draft](formats/V4.2a-draft/lehd_public_use_schema.html): The draft V4.2a-draft version.
-    * [V4.2b-draft](formats/V4.2b-draft/lehd_public_use_schema.html): The draft V4.2b-draft version.
+* V4.2 released versions
+    * [V4.2.0](formats/V4.2.0/lehd_public_use_schema.html): The released V4.2 version.
 
 
 If you are not already there, you might find that browsing [http://labordynamicsinstitute.github.io/qwi_schemas/](http://labordynamicsinstitute.github.io/qwi_schemas/) is easier.
