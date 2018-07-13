@@ -1,21 +1,11 @@
 = LEHD Public Use  Schema V4.3.0 - File and Directory Naming Convention
-Lars Vilhuber <lars.vilhuber@cornell.edu>
+Lars Vilhuber <>
 13 July 2018
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
 
 ( link:lehd_csv_naming.pdf[Printable version] )
 
-
-
-[IMPORTANT]
-.Important
-==============================================
-This document is not an official Census Bureau publication. It is compiled from publicly accessible information
-by Lars Vilhuber (http://www.ilr.cornell.edu/ldi/[Labor Dynamics Institute, Cornell University]).
-Feedback is welcome. Please write us at
-link:mailto:lars.vilhuber@cornell.edu?subject=LEHD_Schema_v4[lars.vilhuber@cornell.edu].
-==============================================
 
 
 Purpose
@@ -235,6 +225,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Fri Jul 13 09:46:27 EDT 2018
+This revision: Fri Jul 13 09:55:18 EDT 2018
 *******************
 
