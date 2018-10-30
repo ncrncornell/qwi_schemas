@@ -1,5 +1,5 @@
 = LEHD Public Use  Schema V4.3.1 - File and Directory Naming Convention
-Lars Vilhuber <ces.qwi.feedback@census.gov>
+Lars Vilhuber <>
 30 October 2018
 // a2x: --dblatex-opts "-P latex.output.revhistory=0 --param toc.section.depth=3"
 :ext-relative: {outfilesuffix}
@@ -7,13 +7,6 @@ Lars Vilhuber <ces.qwi.feedback@census.gov>
 ( link:lehd_csv_naming.pdf[Printable version] )
 
 
-
-[IMPORTANT]
-.Important
-==============================================
-This specification is draft. Feedback is welcome. Please write us at link:mailto:ces.qwi.feedback@census.gov?subject=LEHD_Schema_draft[ces.qwi.feedback@census.gov].
-==============================================
-	
 
 Purpose
 -------
@@ -236,6 +229,6 @@ Some of the data products noted above do not exist yet.
 
 <<<
 *******************
-This revision: Tue Oct 30 13:44:03 EDT 2018
+This revision: Tue Oct 30 14:24:35 EDT 2018
 *******************
 
